@@ -1,0 +1,18 @@
+.movies-list {
+    color: #fff;
+}
+
+.movies-list table tr th,
+.movies-list table tr td {
+    padding: 8px;
+    border: 1px solid #434343;
+    min-width: 120px;
+}
+
+.movies-list table tr td {
+    cursor: pointer;
+}
+
+.movies-list table tr td img {
+    height: 160px;
+}

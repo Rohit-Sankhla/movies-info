@@ -1,0 +1,43 @@
+<div class="flex movie-detail p-20 min-h-screen">
+    <img src="{{movie.Poster}}" class="object-cover flex-[0_0_500px] h-[700px]"/>
+    <div class="right-panel pl-16">
+        <h2 class="text-5xl font-medium mb-4 flex justify-between">
+            {{movie.Title}}
+            <span>{{movie.Rated}}</span>
+        </h2>
+        <div class="top-info mb-10">
+            <span>{{movie.Released}}</span>
+            <span>{{movie.Runtime}}</span>
+            <span>{{movie.BoxOffice}}</span>
+        </div>
+        <div class="bottom-info text-lg">
+            <p class="mb-6 leading-9">{{movie.Plot}}</p>
+            <div><label>Starring</label>{{movie.Actors}}</div>
+            <div><label>Created by</label>{{movie.Writer}}</div>
+            <div><label>Genre</label>{{movie.Genre}}</div>
+            <div><label>Language</label>{{movie.Language}}</div>
+            <div><label>Country</label>{{movie.Country}}</div>
+            <div><label>Awards</label>{{movie.Awards}}</div>
+            <div class="flex"><label>Ratings</label>
+                <table class="w-[400px] text-left">
+                    <tbody>
+                        <tr *ngFor = "let rating of movie.Ratings">
+                            <td>{{rating.Source}}</td>
+                            <td>{{rating.Value}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div><label>Metascore</label>{{movie.Metascore}}</div>
+            <div><label>imdbRating</label>{{movie.imdbRating}}</div>
+            <div><label>imdbVotes</label>{{movie.imdbVotes}}</div>
+            <div><label>imdbID</label>{{movie.imdbID}}</div>
+            <div><label>Type</label>{{movie.Type}}</div>
+            <div><label>DVD</label>{{movie.DVD}}</div>        
+            <div><label>Production</label>{{movie.Production}}</div>
+            <div><label>Website</label>{{movie.Website}}</div>
+        </div>
+        <button (click) = "goToList()" class="site-btn py-2.5 px-5 rounded w-[120px] mt-8">Back</button>
+    </div>
+
+</div>

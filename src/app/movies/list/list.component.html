@@ -1,0 +1,28 @@
+<div class="movies-list text-left p-20">
+    <table class="w-full">
+        <thead>
+            <tr>
+                <th>Poster</th>
+                <th>Name</th>
+                <th>Year</th>
+                <th>Genre</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr (click) = "redirectToDetail()">
+                <td>
+                    <img src="{{movie.Poster}}" alt="Movie Poster" />
+                </td>
+                <td>{{movie.Title}}</td>
+                <td>{{movie.Year}}</td>
+                <td>{{movie.Genre}}</td>
+                <td>
+                    <span *ngFor = "let rating of movie.Ratings">
+                        {{rating.Source}}&nbsp;: &nbsp;&nbsp;{{rating.Value}}<br/>
+                    </span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

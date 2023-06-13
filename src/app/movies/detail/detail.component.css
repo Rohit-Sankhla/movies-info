@@ -1,0 +1,27 @@
+.right-panel {
+    color: #fff;
+}
+
+.top-info {
+    color: #818181;
+}
+
+.top-info span {
+    margin-right: 15px;
+    padding-right: 15px;
+}
+
+.bottom-info > div {
+    margin-bottom: 12px;
+}
+
+.bottom-info label {
+    color: #818181;
+    width: 120px;
+    display: inline-block;
+}
+
+.site-btn {
+    background: #ffffff52;
+    color: #fff;
+}
